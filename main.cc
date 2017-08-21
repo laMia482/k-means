@@ -3,7 +3,6 @@
 int main(int argc, char **argv)
 {
 
-  
   KMeans *km = new KMeans();
   
   km->setPointsNum(100);

@@ -4,6 +4,7 @@
 
 KMeans::KMeans(void)
 {
+  google::InitGoogleLogging(gen);
   srand(time(NULL));
   m_Round = 500;
   m_CurIter = 0;  m_FinalIter = 1000;
@@ -19,7 +20,7 @@ KMeans::KMeans(const KInt &pointsNum, const KInt &pointsCate)
 
 KMeans::~KMeans(void)
 {
-  
+  google::ShutdownGoogleLogging();
 }
 
 void KMeans::setPointsNum(const KInt &pointsNum)
