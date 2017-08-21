@@ -4,7 +4,7 @@
 
 KMeans::KMeans(void)
 {
-  google::InitGoogleLogging(gen);
+  google::InitGoogleLogging("gen");
   srand(time(NULL));
   m_Round = 500;
   m_CurIter = 0;  m_FinalIter = 1000;

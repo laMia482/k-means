@@ -5,7 +5,7 @@ int main(int argc, char **argv)
 
   KMeans *km = new KMeans();
   
-  km->setPointsNum(100);
+  km->setPointsNum(1000);
   km->setRoles(3);
   km->setPoints();
   km->saveAs("origin.jpg");
